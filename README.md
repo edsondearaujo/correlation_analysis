@@ -42,7 +42,7 @@ source venv/bin/activate  # No Windows: venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
-### 4. Certificar-se de que o arquivo de dados cpc_data.xlsx está na pasta data/:
+### 4. Certificar-se de que o arquivo de dados _cpc_data.xlsx_ está na pasta data/:
 O arquivo Excel contém os dados da campanha de Google Ads e deve estar no diretório data/.
 
 ### 5. Executar o projeto:
@@ -53,15 +53,18 @@ python3 -m src.main
 ## Resultados e Análises
 Aqui estão as visualizações e a interpretação dos gráficos gerados durante o processo de análise:
 
-### 1. Gráfico de Dispersão: Relação entre Ocorrências de Anúncios e CPC
+### 1. Gráfico de Dispersão:
+**Relação entre Ocorrências de Anúncios e CPC**
 <div align="center"> <img src="https://github.com/edsondearaujo/correlation_analysis/blob/main/assets/img/grafico_dispersao.png" alt="Gráfico de Dispersão" width="600"> </div>
 O gráfico de dispersão mostra a relação entre o número de Ocorrências de Anúncios e o Custo por Clique (CPC). Cada ponto no gráfico representa um dia de dados. Embora haja uma leve correlação positiva (conforme indicado pela correlação de aproximadamente 0.21), a relação não é forte, sugerindo que outros fatores podem estar influenciando o CPC além das ocorrências de anúncios.
 
-### 2. Gráfico de Linha: Média Mensal do CPC a Partir de Abril de 2023
+### 2. Gráfico de Linha:
+**Média Mensal do CPC a Partir de Abril de 2023**
 <div align="center"> <img src="https://github.com/edsondearaujo/correlation_analysis/blob/main/assets/img/media_mensal_cpc.png" alt="Média Mensal do CPC" width="600"> </div>
 Este gráfico de linha exibe a média mensal do CPC ao longo do tempo, começando em abril de 2023, quando a nova estratégia de anúncios foi implementada. Podemos observar que houve uma leve redução no CPC nos primeiros meses, indicando que a nova estratégia pode ter ajudado a otimizar o custo da campanha.
 
-### 3. Gráfico de Regressão Linear: Correlação entre CPC e Ocorrências de Anúncios
+### 3. Gráfico de Regressão Linear:
+**Correlação entre CPC e Ocorrências de Anúncios**
 <div align="center"> <img src="https://github.com/edsondearaujo/correlation_analysis/blob/main/assets/img/regressao_linear.png" alt="Regressão Linear" width="600"> </div>
 O gráfico de regressão linear mostra a relação entre o CPC e as Ocorrências de Anúncios. A linha azul indica a melhor linha de ajuste, revelando uma tendência de aumento do CPC à medida que as ocorrências aumentam. A inclinação é leve, o que reforça a correlação moderada encontrada na análise anterior.
 
